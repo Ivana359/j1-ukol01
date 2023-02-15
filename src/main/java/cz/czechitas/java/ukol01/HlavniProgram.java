@@ -52,13 +52,13 @@ public class HlavniProgram {
         zofka.setLocation(470,500);
         prasatko(zofka);
 
-  /*      //zofka se přesune na novou pozici a napíše moje jmeno
+        //zofka se přesune na novou pozici a napíše moje jmeno
         zofka.setLocation(500,800);
         nakresliI(zofka);
         nakresliV(zofka);
         nakresliA(zofka);
         nakresliN(zofka);
-        nakresliA(zofka);*/
+        nakresliA(zofka);
     }
 
 
