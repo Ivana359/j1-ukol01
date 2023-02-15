@@ -50,7 +50,7 @@ public class HlavniProgram {
 
         //zofka se přesune na novou pozici a nakreslí prasátko
         zofka.setLocation(470,500);
-        prasatko(zofka);
+        novePrasatko(zofka);
 
         //zofka se přesune na novou pozici a napíše moje jmeno
         zofka.setLocation(500,800);
@@ -59,6 +59,7 @@ public class HlavniProgram {
         nakresliA(zofka);
         nakresliN(zofka);
         nakresliA(zofka);
+
     }
 
 
@@ -96,13 +97,16 @@ public class HlavniProgram {
         zofka.turnRight(90);
         zofka.move(150);
         zofka.turnLeft(45);
+
         zofka.move(50);
         zofka.turnLeft(180);
         zofka.move(50);
         zofka.turnLeft(45);
         zofka.move(100);
         zofka.turnRight(180);
+
     }
+
 
     private static void nozicky(Turtle zofka) {
         zofka.turnRight(45);
@@ -230,6 +234,37 @@ public class HlavniProgram {
         zofka.move(30);
         zofka.penDown();
         zofka.turnLeft(90);
+    }
+    private static void novePrasatko(Turtle zofka) {
+        zofka.turnLeft(90);
+        nakresliDomecek(zofka);
+        zofka.turnLeft(90);
+        zofka.move(100);
+
+        nozicky(zofka);
+
+        zofka.move(150);
+        zofka.turnLeft(90);
+
+        nozicky(zofka);
+
+        zofka.turnRight(90);
+        zofka.move(100);
+        zofka.turnRight(90);
+        zofka.move(150);
+        zofka.turnLeft(45);
+
+        for (int i = 0; i < 8; i++) {
+            zofka.move(8);
+            zofka.turnRight(20);
+        }
+        for (int j = 0; j < 7; j++) {
+            zofka.move(5);
+            zofka.turnRight(25);
+
+        }
+        zofka.setLocation(100,100);
+        zofka.turnLeft(20);
     }
 
 
