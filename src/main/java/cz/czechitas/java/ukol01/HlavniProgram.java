@@ -8,28 +8,28 @@ public class HlavniProgram {
         Turtle zofka = new Turtle();
 
 
-   /*     //Nakresli prasatko
+   /*     //Zofka nakresli se prasatko
         prasatko(zofka);
 
-        //zofka se presune na novou pozici a nakresli osmiuhelnik
+        //Zofka se presune na novou pozici a nakresli osmiuhelnik
         zofka.setLocation(200, 200);
         nUhelnik(zofka, 50, 8);
 
 
-        //zofka se presune na novou pozici a nakresli kolecko
+        //Zofka se presune na novou pozici a nakresli kolecko
         zofka.setLocation(400, 200);
         nUhelnik(zofka, 10, 36);
 
-        //zofka se presune na novou pozici a nakreslí slunicko
+        //Zofka se presune na novou pozici a nakreslí slunicko
         zofka.setLocation(600, 200);
         nakresliSlunicko(zofka, 10);*/
 
-    //želva se přesnune na pozici a nakreslí sluníčko
-        zofka.setLocation(150,60);
-        nakresliSlunicko(zofka,5);
+        //Zofka se presune na novou pozici a nakresli sluníčko
+        zofka.setLocation(150, 60);
+        nakresliSlunicko(zofka, 5);
 
-    //zofka se presune na pozici a nakreslí první řadu domečků
-        zofka.setLocation(120,350);
+        //Zofka se presune na novou pozici a nakresli prvni radu domecku
+        zofka.setLocation(120, 350);
         for (int i = 0; i < 5; i++) {
             nakresliDomecek(zofka);
             zofka.penUp();
@@ -38,8 +38,8 @@ public class HlavniProgram {
             zofka.turnLeft(90);
             zofka.penDown();
         }
-    //zofka se přesune na pozci a nakreslí druhou řadu domečků
-        zofka.setLocation(120,650);
+        //Zofka se presune na novou pozici a nakresli druhou radu domecku
+        zofka.setLocation(120, 650);
         nakresliDomecek(zofka);
         zofka.penUp();
         zofka.turnRight(90);
@@ -48,12 +48,12 @@ public class HlavniProgram {
         zofka.penDown();
         nakresliDomecek(zofka);
 
-        //zofka se přesune na novou pozici a nakreslí prasátko
-        zofka.setLocation(470,500);
+        //Zofka se presune na novou pozici a nakresli prasatko
+        zofka.setLocation(470, 500);
         novePrasatko(zofka);
 
-        //zofka se přesune na novou pozici a napíše moje jmeno
-        zofka.setLocation(500,800);
+        //Zofka se presune na novou pozici a napise moje jmeno
+        zofka.setLocation(500, 800);
         nakresliI(zofka);
         nakresliV(zofka);
         nakresliA(zofka);
@@ -163,7 +163,7 @@ public class HlavniProgram {
 
     }
 
-    void nakresliI(Turtle zofka){
+    void nakresliI(Turtle zofka) {
         zofka.penUp();
         zofka.turnRight(90);
         zofka.move(50);
@@ -181,7 +181,7 @@ public class HlavniProgram {
 
     }
 
-    private void nakresliV(Turtle zofka){
+    private void nakresliV(Turtle zofka) {
         zofka.penUp();
         zofka.turnRight(90);
         zofka.move(30);
@@ -201,7 +201,8 @@ public class HlavniProgram {
         zofka.penDown();
         zofka.turnLeft(90);
     }
-    void nakresliA(Turtle zofka){
+
+    void nakresliA(Turtle zofka) {
         zofka.turnRight(20);
         zofka.move(100);
         zofka.turnRight(140);
@@ -220,7 +221,8 @@ public class HlavniProgram {
         zofka.penDown();
 
     }
-    private void nakresliN(Turtle zofka){
+
+    private void nakresliN(Turtle zofka) {
         zofka.move(100);
         zofka.turnRight(145);
         zofka.move(120);
@@ -230,11 +232,12 @@ public class HlavniProgram {
         zofka.move(100);
 
         zofka.penUp();
-        zofka. turnLeft(90);
+        zofka.turnLeft(90);
         zofka.move(30);
         zofka.penDown();
         zofka.turnLeft(90);
     }
+
     private static void novePrasatko(Turtle zofka) {
         zofka.turnLeft(90);
         nakresliDomecek(zofka);
@@ -263,7 +266,7 @@ public class HlavniProgram {
             zofka.turnRight(25);
 
         }
-        zofka.setLocation(100,100);
+        zofka.setLocation(100, 100);
         zofka.turnLeft(20);
     }
 
