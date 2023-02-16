@@ -2,13 +2,18 @@ package cz.czechitas.java.ukol01;
 
 import cz.czechitas.java.ukol01.engine.*;
 
+import java.awt.*;
+
+
+
 public class HlavniProgram {
 
     public void start() {
         Turtle zofka = new Turtle();
+        Color ruzova = new Color(232, 9, 170);
 
 
-   /*     //Zofka nakresli se prasatko
+/*        //Zofka nakresli se prasatko
         prasatko(zofka);
 
         //Zofka se presune na novou pozici a nakresli osmiuhelnik
@@ -50,7 +55,11 @@ public class HlavniProgram {
 
         //Zofka se presune na novou pozici a nakresli prasatko
         zofka.setLocation(470, 500);
+
+        Color puvodni = zofka.getPenColor();
+        zofka.setPenColor(ruzova);
         novePrasatko(zofka);
+        zofka.setPenColor(puvodni);
 
         //Zofka se presune na novou pozici a napise moje jmeno
         zofka.setLocation(500, 800);
@@ -266,8 +275,11 @@ public class HlavniProgram {
             zofka.turnRight(25);
 
         }
+        zofka.setLocation(285,545);
+        nUhelnik(zofka,1,20);
         zofka.setLocation(100, 100);
         zofka.turnLeft(20);
+
     }
 
 
