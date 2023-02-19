@@ -11,6 +11,7 @@ public class HlavniProgram {
     public void start() {
         Turtle zofka = new Turtle();
         Color ruzova = new Color(232, 9, 170);
+        Color zluta = new Color(253, 230, 3);
 
 
 /*        //Zofka nakresli se prasatko
@@ -31,7 +32,10 @@ public class HlavniProgram {
 
         //Zofka se presune na novou pozici a nakresli sluníčko
         zofka.setLocation(150, 60);
+        Color puvodni = zofka.getPenColor();
+        zofka.setPenColor(zluta);
         nakresliSlunicko(zofka, 5);
+        zofka.setPenColor(puvodni);
 
         //Zofka se presune na novou pozici a nakresli prvni radu domecku
         zofka.setLocation(120, 350);
@@ -56,13 +60,13 @@ public class HlavniProgram {
         //Zofka se presune na novou pozici a nakresli prasatko
         zofka.setLocation(470, 500);
 
-        Color puvodni = zofka.getPenColor();
+        //Color puvodni = zofka.getPenColor();
         zofka.setPenColor(ruzova);
         novePrasatko(zofka);
         zofka.setPenColor(puvodni);
 
         //Zofka se presune na novou pozici a napise moje jmeno
-        zofka.setLocation(500, 800);
+        zofka.setLocation(150, 800);
         nakresliI(zofka);
         nakresliV(zofka);
         nakresliA(zofka);
